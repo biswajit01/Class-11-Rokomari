@@ -1,31 +1,14 @@
-*{margin:0; padding:0;}
+*{margin:0; padding:0; box-sizing: border-box;}
 body{background-color: #ddd;}
-.main-wrapper{
-	width: 100%;	
-}
 .container{
 	width: 80%;
 	margin: 0 auto;
-	display:block;
-	margin-bottom: 15px;
+	display: block;
 }
-.head-mar{
-	margin-bottom: 0;
-}
-.container::after{
-   content: "";
-   display: table;
-   clear: both;
-}
-img
-
-/* start header */
 header{
 	padding-top: 1px;
-	position: fixed;
-}
-.header_bg{
-	background-color: #fff;
+	position: relative;
+
 }
 .header{
 	background-color: #fff;
@@ -74,12 +57,10 @@ header{
 /*end header*/
 
 /*start Nav*/
-.nav-bg{
-	background-color: #fff;
-}
 nav {
     background-color: #fff;
     height: 56px;
+    margin-top: 68px;
 	overflow: hidden;
 }
 .nav ul{
@@ -122,7 +103,7 @@ nav {
     list-style-type: none;
     position: absolute;
     margin-left: 3px;
-	position: relative;
+position: relative;
 }
 .main-down .down-menu li {
     float: left;
@@ -138,25 +119,21 @@ nav {
 	color: blue;
 }
 .main-down .down-menu ul .li2-1:hover .main-sab{
-	opacity:1;	
+	top: 0;	
 }
 /*  end down nav  */
 
 /*  sab menu  */
-.main-down-bg{
-	background-color: #fff;
-}
 .main-sab {
     width: 100%;
     background-color: #fff;
     height: 210px;
-    margin-top: 15px;
+    margin-top: 51px;
     position: absolute;
+    top: -99999px;
     display: block;
     overflow: hidden;
     margin-left: -23px;
-	transition: 0.3s ease all;
-	opacity: 0;
 }
 .main-sab .sab{
 	float: left;
@@ -173,60 +150,6 @@ nav {
 	text-decoration: none;
 	color: #000;
 }
-/*  end sab menu  */
-
-/*  start slider  */
-.slider img {
-    width: 100%;
-    height: 245px;
-}
-.slider-ads {
-    margin-top: 15px;
-}
-.slider-ads img {
-    width: 31.33%;
-    float: left;
-    height: 65px;
-}
-.slider-ads .sli-img{
-	margin-right: 32px;
-}
-/*  end slider  */
-
-/* recently sold */
-.product-bg {
-    background-color: #fff;
-    height: 329px;
-}
-.recent-h{
-	padding: 10px
-}
-.sold-pro{
-	height: 300px;
-	background-color: r;
-}
-.recent-sold {
-    padding-top: 3px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.recent-sold img {
-    float: left;
-    padding: 22px 22px 60px;
-}
-.sold-pic{
-	margin-right: 3px;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
