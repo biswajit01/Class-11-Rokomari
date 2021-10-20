@@ -28,6 +28,7 @@ header{
 }
 .header_bg{
 	background-color: #fff;
+	margin-bottom: 0;
 }
 .header{
 	background-color: #fff;
@@ -86,6 +87,7 @@ header{
 /*start Nav*/
 .nav-bg{
 	background-color: #fff;
+	margin-bottom: 0;
 }
 nav {
     background-color: #fff;
