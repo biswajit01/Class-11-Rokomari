@@ -1,7 +1,8 @@
 *{margin:0; padding:0;}
 body{background-color: #ddd;}
 .main-wrapper{
-	width: 100%;	
+	width: 100%;
+margin-bottom: 15px;	
 }
 .container{
 	width: 80%;
@@ -12,7 +13,10 @@ body{background-color: #ddd;}
 .head-mar{
 	margin-bottom: 0;
 }
-.container::after{
+.container::after,
+.row,
+.rows,
+.payment-accept	{
    content: "";
    display: table;
    clear: both;
@@ -70,6 +74,11 @@ header{
     margin-top: -45px;
     border-radius: 5px;
     background: #fff;
+	cursor: pointer;
+}
+.header a button:hover{
+	color: #fff;
+	background-color: blue;
 }
 /*end header*/
 
@@ -196,26 +205,189 @@ nav {
 /* recently sold */
 .product-bg {
     background-color: #fff;
-    height: 329px;
+    height: 345px;
+	margin-bottom: 15px;
+	position: relative;
+	margin-top: 15px;
+    box-shadow: 1px 1px 12px 0px;
 }
-.recent-h{
+.recent-heading{
 	padding: 10px
 }
-.sold-pro{
+.sold-prod{
 	height: 300px;
 	background-color: r;
+	margin-bottom: 15px;
 }
 .recent-sold {
     padding-top: 3px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.recent-sold img {
+.details{
+	float:left;
+	text-align: center;
+	padding: 22px 22px 25px; 
+}
+.details p{
+	padding-top: 18px;
+}
+
+.details .price{
+	text-align: center;
+	padding-top: 8px;
+}
+.details .price del{
+	padding-right: 12px;
+}
+
+/* start footer */
+
+.footer-bg{
+	background-color: #fff;
+	padding-top: 15px ;
+	height: 414px;
+    margin-bottom: 0;
+}
+.footer-background{
+	background-color: #fff;
+}
+.footer .row .col3{
+	width: 271px;
+	display: block;
+	float: left;
+	padding: 0 10px;
+}
+.footer .row{
+	margin-bottom: 30px;
+}
+.footer .row .col3 .basic-info{
+	margin-top: 20px;
+}
+.footer .row .col3 .basic-info p{
+
+	margin-bottom: 20px;
+}
+.footer .row .col3 .basic-info em {
+    padding-left: 4px;
+    display: inline-block;
+}
+.footer .row .col3 .basic-info .em2{
+    padding-left: 148px;
+    display: inline-block;
+}
+.footer .row .col3 .basic-info p .cor{
+	position: relative;
+}
+.footer .row .col3 .basic-info .cor img{
+	position: absolute;
+	display: block;
+	padding-top: 31px;
+}
+.footer .row .col3 .basic-info .cor span {
+    position: absolute;
+    display: block;
+    padding-top: 35px;
+    padding-left: 34px;
+}
+.footer .row .col3 .basic-info .ma{
+	padding-right: 8px;
+}
+.footer .row .col3 .basic-info .ho4{
+	position: relative;
+}
+.footer .row .col3 .basic-info .ho4 img[alt="home"]{
+	position: relative;
+}
+.footer .row .col3 .basic-info .ho4 .ho{
+	float: left;
+	position: absolute;		    padding-left: 13px;
+}
+.footer .row .connected {
+	margin-top: 30px ;
+	padding-left: 20px;
+}
+.footer .row .connected .socil{
+	margin-top: 20px;
+}
+.footer .row .connected .socil img {
+    display: block;
     float: left;
-    padding: 22px 22px 60px;
+    width: 35px;
+    height: 28px;
+    margin-right: 5px;
+    border-radius: 13%;
 }
-.sold-pic{
-	margin-right: 3px;
+.footer div#col33 {
+    width: 460px;
+}
+.footer .row .col3 .footer-link .rows{
+	margin-bottom: 23px;
+}
+.footer .row .col33 .col{
+	display: flex;
+}
+.footer .row #col33 .col {
+	float: left;
+	display: block;
+	
+}
+.footer .row #col33 .coll{
+
+}
+.footer .row #col33 .col ul{
+	list-style-type: none; 
+	padding-right: 76px;
+}
+.footer .row #col33 .col ul li{
+	padding: 3px 0px;
+}
+.footer .row #col33 .col ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+}
+
+.footer .row .col3 .app-icon{
+	margin: 30px 0;
+}
+.footer .row .col3 .app-icon .title {
+	margin-bottom: 20px;
+}
+
+
+
+
+.payment-accept {
+    width: 100%;
+    float: left;
+    display: block;
+    margin: 0 auto;
+	height: 50px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+}
+.payment-accept p {
+    padding-top: 13px;
+    padding-left: 329px;
+    font-size: 22px;
+}
+.method {
+    padding-left: 545px;
+}
+.payment-accept .method img {
+    width: 48px;
+    height: 30px;
+    padding: 10px 5px;
+}
+.sammary {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    margin-top: -15px;
+    padding: 29px 0;
+    line-height: 26px;
 }
 
 
@@ -224,8 +396,89 @@ nav {
 
 
 
+/*  start sign IN page  */
+
+.signIN-page-img{
+	float: left;
+}
+.signIN-page-img img {
+    height: 534px;
+    width: 370px;
+}
 
 
+.signIN-page {
+    float: left;
+    background-color: #fff;
+    height: 510px;
+    width: 65%;
+    margin-top: 10px;
+    border-radius: 0 5px 5px 0;
+}
+.signIN-holder{
+	position: relative;
+}
+.signIN-page .signIN-holder {
+    padding: 54px 64px;
+	text-align: center;
+}
+.singIN{
+	margin-bottom: 30px;
+}
+.signIN-page .singIN h3{
+	display: inline;
+	border-bottom: 3px solid #ddd;
+}
+.signIN-page .singIN h3 a{
+	text-decoration: none;
+}
+.signIN-page .signIN-holder p{
+	margin-bottom: 20px;
+}
+.signIN-page .fb-or-go img {
+    width: 112px;
+    height: 34px;
+    margin-right: 10px;
+	margin-bottom: 22px;
+}
+.signIN-page .signIN-holder input {
+    display: block;
+    width: 440px;
+    margin: 0 auto;
+    height: 37px;
+    margin-bottom: 9px;
+    border-radius: 0 5px 5px 0;
+    padding-left: 5px;
+}
+
+.signIN-page .signIN-holder .remind-forgot p{
+	float: left;
+	display: block;
+}
+.signIN-page .signIN-holder .remind-forgot input {
+    width: 19px;
+    left: 14px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    display: inline;
+}
+.signIN-page .signIN-holder .remind-forgot span.rem{
+    padding: 9px 0 0 18px;
+    display: block;
+}
+.signIN-page .signIN-holder .remind-forgot span.forgot p {
+    padding: 9px 0 0 268px;
+	color: blue;
+}
+.signIN-page .signIN-holder .submit button{
+	padding: 10px 200px;
+	background-color: green;
+	color: #fff;
+}
+.signIN-page .signIN-holder .submit p a{
+	color: blue;
+}
 
 
 
